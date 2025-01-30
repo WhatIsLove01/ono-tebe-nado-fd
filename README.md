@@ -1,1 +1,1 @@
-https://github.com/WhatIsLove01/ono-tebe-nado
+https://github.com/WhatIsLove01/ono-tebe-nado-fd
