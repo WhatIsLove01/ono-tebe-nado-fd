@@ -17,12 +17,16 @@
   height: 105px;
 }
 
-.header__links-list-item_no-bullit{
+.header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
 .header__link {
   border-bottom: 2px solid black;
+}
+
+.header__link_active {
+  border-bottom: none;
 }
 
 .header__links-list {
@@ -38,7 +42,7 @@
   padding-right: 37px;
 }
 
-.address__bottom-line-link{
+.address__link {
   border-bottom: 2px solid black;
 }
 .cover {
@@ -48,7 +52,7 @@
   padding: 165px 50px 50px;
 }
 
-.image-alignment{
+.image-alignment {
   background-size: cover;
   background-position: center center;
   z-index: 1;
@@ -73,14 +77,19 @@
 
 .text {
   display: block;
-}
-.text_left {
   margin-bottom: 20px;
+}
+
+.text:last-child {
+  margin-bottom: 0px;
+}
+
+.text_left {
+  text-align: left;
 }
 
 .text_center {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .text_right {
@@ -134,9 +143,9 @@
 }
 
 .lots__card-list {
-  min-width: 334px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -184,7 +193,7 @@
 
 .link__look-more-link {
   display: inline-block;
-  padding: 30px 0 0 40px; 
+  padding: 30px 0 0 40px;
   font-weight: 400;
   font-size: 20px;
   color: black;
@@ -195,9 +204,9 @@
 .link__look-more-link::after {
   content: "";
   position: absolute;
-  left: 40px; 
+  left: 40px;
   bottom: 0;
-  width: calc(100% - 40px); 
+  width: calc(100% - 40px);
   height: 2px;
   background-color: black;
 }
@@ -271,6 +280,10 @@
 
 .footer__menu-link {
   border-bottom: 2px solid black;
+}
+
+.footer__menu-link_active {
+  border-bottom: none;
 }
 
 .footer__social-list {
